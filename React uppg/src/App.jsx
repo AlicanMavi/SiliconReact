@@ -1,4 +1,4 @@
-import './App.css'
+import './assets/css/style.css'
 import Brands from './components/Brands'
 import Features from './components/Features'
 import Footer from './components/Footer'
