@@ -1,16 +1,19 @@
-import React from 'react'
+import React from 'react';
+import iphoneVisaImg from '../assets/Images/iphone-visa-3d.svg';
 
 const Features = () => {
   return (
-    <section classNameName="features">
+    <section className="features">
       <div className="container">
         <div className="app-feature">
           <div>
-            <img src="Images/iphone-visa-3d.svg" alt="#" />
+            <img src={iphoneVisaImg} alt="iPhone Visa" />
           </div>
           <div>
             <h1>App Features</h1>
-            <p id="feat-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
+            <p id="feat-title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.
+            </p>
             
             <div className="icons">
               <div>
@@ -26,7 +29,7 @@ const Features = () => {
                   <i className="fa-light fa-shield"></i>
                   <h4>Data Security</h4>
                 </div> 
-                <p>Augue pulvinar justo, fermentum fames aliquam accumsan vestibulum non. </p>
+                <p>Augue pulvinar justo, fermentum fames aliquam accumsan vestibulum non.</p>
               </div>
 
               <div>
@@ -40,7 +43,7 @@ const Features = () => {
               <div>
                 <div className="icon-alignment">
                   <i className="fa-light fa-comments-question"></i>
-                <h4>Support 24/7</h4>
+                  <h4>Support 24/7</h4>
                 </div> 
                 <p>A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
               </div>
@@ -62,16 +65,11 @@ const Features = () => {
               </div>
               
             </div>
-
           </div>
-
         </div>
-        
-       
-
       </div>
     </section>
-  )
+  );
 }
 
-export default Features
+export default Features;

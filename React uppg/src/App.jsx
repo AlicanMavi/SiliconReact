@@ -1,14 +1,14 @@
 import './assets/css/style.css'
-import Brands from './components/Brands'
-import ClientPageReviews from './components/ClientPageReviews'
-import Features from './components/Features'
-import Footer from './components/Footer'
 import Header from './components/Header'
 import Hero from './components/Hero'
-import MoneyTransfer from './components/MoneyTransfer'
-import Questionair from './components/Questionair'
-import ReceivePayments from './components/ReceivePayments'
+import Brands from './components/Brands'
+import Features from './components/Features'
 import Transactions from './components/Transactions'
+import MoneyTransfer from './components/MoneyTransfer'
+import ReceivePayments from './components/ReceivePayments'
+import ClientPageReviews from './components/ClientPageReviews'
+import Questionair from './components/Questionair'
+import Footer from './components/Footer'
 
 function App() {
   
@@ -24,7 +24,7 @@ function App() {
       <ReceivePayments />
       <ClientPageReviews />
       <Questionair />
-      <Footer />
+      <Footer /> 
     </>
   )
 }
