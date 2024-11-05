@@ -40,14 +40,10 @@ body {
   font-size: 16px;
 }
 
-
-
 body.dark-mode {
   background-color: #121212; 
-  color: #ffffff;  
+  color: #ffffff;
 }
-
-
 
 .nav-link {
   color: #ffffff; 
@@ -56,6 +52,127 @@ body.dark-mode {
 .btn-primary {
   background-color: #6200ea; 
   color: #ffffff; 
+}
+
+
+
+body.dark-mode .app-feature .container {
+  color: #fff; 
+}
+
+body.dark-mode .app-feature p {
+  color: #ece6e6;
+   
+}
+
+.dark-mode .transactions {
+  background-color: #0807071b;
+  color: #f0f0f0;
+}
+
+body.dark-mode .icons {
+  color: #f0f0f0; 
+}
+
+body.dark-mode .icons h4 {
+  color: #f0f0f0; 
+}
+
+body.dark-mode .icons p {
+  color: #c7c7c7; 
+}
+
+
+body.dark-mode .client-page-reviews {
+  background-color: #1c1c1c; 
+  color: #f0f0f0;
+}
+
+body.dark-mode .client-page-reviews h2 {
+  color: #ffffff; 
+}
+
+
+.faq-box {
+  background-color: var(--color-gray-2); 
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+body.dark-mode .faq-box {
+  background-color: #444; 
+  color: #ffffff; 
+}
+
+
+body.dark-mode .faq-box h3,
+body.dark-mode .faq-box p {
+  color: #ffffff;
+}
+
+
+.faq-left-boxes .phone button,
+.faq-left-boxes .chat-bubble button {
+  padding: 0.5rem 1rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-left-boxes .phone button:hover,
+.faq-left-boxes .chat-bubble button:hover {
+  background-color: var(--color-dark); 
+}
+
+body.dark-mode .faq-left-boxes .phone button {
+  background-color: #0c0c1224; 
+}
+
+body.dark-mode .faq-left-boxes .chat-bubble button {
+  background-color: #0c0c1224; 
+}
+
+body.dark-mode .faq-left-boxes .phone button:hover,
+body.dark-mode .faq-left-boxes .chat-bubble button:hover {
+  background-color: #5d5be486;
+}
+
+body.dark-mode .faq-box {
+  background-color: #444; 
+}
+
+.faq-box:hover {
+  background-color: var(--color-gray-3);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.faq-toggle-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.faq-answer {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--color-gray-7);
+}
+
+body.dark-mode .faq-answer {
+  color: #ccc; 
 }
 
 
