@@ -9,6 +9,7 @@ import ReceivePayments from './components/ReceivePayments'
 import ClientPageReviews from './components/ClientPageReviews'
 import Questionair from './components/Questionair'
 import Footer from './components/Footer'
+import Form from './components/Form'
 
 function App() {
   
@@ -25,6 +26,7 @@ function App() {
       <ClientPageReviews />
       <Questionair />
       <Footer /> 
+      <Form />
     </>
   )
 }
