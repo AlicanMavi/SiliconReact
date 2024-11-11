@@ -175,6 +175,10 @@ body.dark-mode .faq-answer {
   color: #ccc; 
 }
 
+.faq-right {
+  margin-top: 3rem;
+}
+
 
 .toggle-switch .slider {
   background-color: #ccc;
@@ -783,6 +787,10 @@ footer {
     font-weight: 100px;
     margin-left: 50px;
   }
+}
+.form {
+  margin-top: 7rem;
+  margin-bottom: 10rem;
 }
 
 body.dark-mode .form-with-bell {
