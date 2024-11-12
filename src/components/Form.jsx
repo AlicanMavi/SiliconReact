@@ -7,12 +7,12 @@ const Form = () => {
   const [email, setEmail] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
-  // Funktion för att hantera e-poständring
+  
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
 
-  // Funktion som hanterar klick på knappen och visar popupen om e-post är giltig
+  
   const handleSubscribeClick = () => {
     if (validateEmail(email)) {
       setIsSubscribed(true);
@@ -22,13 +22,13 @@ const Form = () => {
     }
   };
 
-  // Funktion för att validera e-postadress
+  
   const validateEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
 
-  // Funktion för att stänga popupen
+  
   const handleClosePopup = () => {
     setIsSubscribed(false);
   };
