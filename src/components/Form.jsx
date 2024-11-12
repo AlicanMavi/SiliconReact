@@ -1,8 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import bellLogo from '../assets/Images/bell-logo.svg';
 import envelopeIcon from '../assets/Images/envelope.svg';
 
 const Form = () => {
+  const [isSubscribed, setIsSubscribed] = useState(false);
+  const [email, setEmail] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  // Funktion för att hantera e-poständring
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  // Funktion som hanterar klick på knappen och visar popupen om e-post är giltig
+  const handleSubscribeClick = () => {
+    if (validateEmail(email)) {
+      setIsSubscribed(true);
+      setErrorMessage('');
+    } else {
+      setErrorMessage('Please enter a valid email address');
+    }
+  };
+
+  // Funktion för att validera e-postadress
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  // Funktion för att stänga popupen
+  const handleClosePopup = () => {
+    setIsSubscribed(false);
+  };
+
   return (
     <section className="form">
       <div className="container">
@@ -15,12 +45,31 @@ const Form = () => {
 
           <div className="input-group">
             <img src={envelopeIcon} alt="Envelope Icon" />
-            <input className="form-input email" type="email" placeholder="Your Email" />
-            <button className="btn-form">Subscribe</button>
+            <input
+              className="form-input email"
+              type="email"
+              placeholder="Your Email"
+              value={email}
+              onChange={handleEmailChange}
+            />
+            <button className="btn-form" onClick={handleSubscribeClick}>Subscribe</button>
           </div>
 
+          {errorMessage && (
+            <p className="error-message">{errorMessage}</p>
+          )}
         </div>
       </div>
+
+      {isSubscribed && (
+        <div className="popup">
+          <div className="popup-content">
+            <span className="close-button" onClick={handleClosePopup}>&times;</span>
+            <h2>Thank you for subscribing!</h2>
+            <p>You are now subscribed to our newsletter.</p>
+          </div>
+        </div>
+      )}
     </section>
   )
 }
